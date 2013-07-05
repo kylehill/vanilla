@@ -1,6 +1,6 @@
 exports = module.exports = function(app) {
   
-  app.get("/", app.controllers.landing);
+  app.controllers = require("../controllers");
   
   return app;
   
